@@ -1322,15 +1322,15 @@
 			filter: blur(8px);
 		}
 
-			body.modal-active #wrapper:after {
-				-moz-pointer-events: auto;
-				-webkit-pointer-events: auto;
-				-ms-pointer-events: auto;
-				pointer-events: auto;
-				opacity: 1;
-				visibility: visible;
-				z-index: 10003;
-			}
+		body.modal-active #wrapper:after {
+			-moz-pointer-events: auto;
+			-webkit-pointer-events: auto;
+			-ms-pointer-events: auto;
+			pointer-events: auto;
+			opacity: 1;
+			visibility: visible;
+			z-index: 10003;
+		}
 
 		#wrapper:before {
 			-moz-animation: spinner 1s infinite linear !important;
