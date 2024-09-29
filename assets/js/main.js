@@ -279,9 +279,11 @@
             fadeSpeed: 300,
             onPopupClose: function () {
                 $body.removeClass('modal-active');
+                $('html, body').css('overflow', '');
             },
             onPopupOpen: function () {
                 $body.addClass('modal-active');
+                $('html, body').css('overflow', 'hidden');
             },
             overlayOpacity: 0,
             popupCloserText: '',
