@@ -279,13 +279,15 @@
             fadeSpeed: 300,
             onPopupClose: function () {
                 $body.removeClass('modal-active');
+                $('#header, #footer').css('visibility', 'visible');
                 $('html, body').css('overflow', '');
             },
             onPopupOpen: function () {
                 $body.addClass('modal-active');
+                $('#header, #footer').css('visibility', 'hidden');
                 $('html, body').css('overflow', 'hidden');
             },
-            overlayOpacity: 0,
+            overlayOpacity: 0.95, // Increase overlay opacity to hide background content better
             popupCloserText: '',
             popupHeight: 150,
             popupLoaderText: '',
