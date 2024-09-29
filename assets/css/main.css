@@ -1316,6 +1316,7 @@
 			}
 
 		body.modal-active #wrapper {
+			overflow: hidden;
 			-moz-filter: blur(8px);
 			-webkit-filter: blur(8px);
 			-ms-filter: blur(8px);
@@ -1990,6 +1991,10 @@
 		font-size: 0.9em;
 	}
 
-		#footer .copyright a {
-			color: inherit;
-		}
+	#footer .copyright a {
+		color: inherit;
+	}
+	#footer.hidden {
+		transform: translateY(-100%);
+		visibility: hidden;
+	}

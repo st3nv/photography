@@ -279,13 +279,23 @@
             fadeSpeed: 300,
             onPopupClose: function () {
                 $body.removeClass('modal-active');
-                $('#header, #footer').css('visibility', 'visible');
-                $('html, body').css('overflow', '');
+                $('#header, #footer').removeClass('hidden');
+                $('html, body').css({
+                    'overflow': '',
+                    'position': '',
+                    'height': '',
+                    'width': ''
+                });
             },
             onPopupOpen: function () {
                 $body.addClass('modal-active');
-                $('#header, #footer').css('visibility', 'hidden');
-                $('html, body').css('overflow', 'hidden');
+                $('#header, #footer').addClass('hidden');
+                $('html, body').css({
+                    'overflow': 'hidden',
+                    'position': 'fixed',
+                    'height': '100%',
+                    'width': '100%'
+                });
             },
             overlayOpacity: 0.95, // Increase overlay opacity to hide background content better
             popupCloserText: '',
