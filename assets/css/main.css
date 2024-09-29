@@ -1324,6 +1324,7 @@
 		}
 
 		body.modal-active #wrapper:after {
+			overflow: hidden;
 			-moz-pointer-events: auto;
 			-webkit-pointer-events: auto;
 			-ms-pointer-events: auto;
@@ -1332,10 +1333,14 @@
 			visibility: visible;
 			z-index: 10003;
 		}
-
-		body.modal-active #header{
-			
-
+		body.modal-active #header {
+			bottom: 0;
+			transition: bottom 0.3s ease;
+		}
+		
+		#footer.hidden {
+			transform: translateY(100%);
+			visibility: hidden;
 		}
 
 		#wrapper:before {
