@@ -1333,6 +1333,11 @@
 			z-index: 10003;
 		}
 
+		body.modal-active #header{
+			
+
+		}
+
 		#wrapper:before {
 			-moz-animation: spinner 1s infinite linear !important;
 			-webkit-animation: spinner 1s infinite linear !important;
